@@ -20,10 +20,10 @@ def gerandoPDF():
     cont = 0
     #abaixo vou criar uma string que vai aparecer no PDF:
     mensagem = (f'Primeira linha do pdf',
-                f'Segunda linha do pdf'
+                f'Segunda linha do pdf',
                 f'Terceira e última linha do pdf'
     )
-    linhas = 3
+    linhas = 3 #ou pode usar len(mensagem), vai ser 3 também
     while cont < linhas:  
         pdf.cell(100, 10, txt=str(mensagem[cont]), ln=100, align='L')
         cont = cont + 1
